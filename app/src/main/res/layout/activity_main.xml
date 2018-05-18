@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3c203d"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Previsão do tempo de Torres"
+        android:textSize="27dp"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/pCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_weight="2"
+            android:layout_marginHorizontal="10dp"/>
+
+        <Button
+            android:id="@+id/btnProcurar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Procurar"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/listPrevisoes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+    </ListView>
+
+</LinearLayout>
